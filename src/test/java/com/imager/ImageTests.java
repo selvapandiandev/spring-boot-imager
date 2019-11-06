@@ -13,6 +13,7 @@ public class ImageTests {
 	public void imagesManagedByLombokShouldWork() {
 		Image image = new Image("imageId", "imageName");
 		assertThat(image.getId()).isEqualTo("imageId");
+		assertThat(image.getName()).isEqualTo("imageName");
 	}
 
 }
