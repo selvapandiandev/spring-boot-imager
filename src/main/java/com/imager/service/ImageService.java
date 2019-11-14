@@ -113,4 +113,8 @@ public class ImageService {
 		return Mono.when(deleteDatabaseImage,deleteFile).then();
 	}
 	
+	public Mono<Image> findOneApiImage(String imageName) {
+		return imageRepository.findByName(imageName);
+	}
+	
 }
